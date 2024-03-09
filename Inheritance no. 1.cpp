@@ -11,7 +11,7 @@ class X
     public :
     };
 
-class Y:public X
+class Y: public X
 {   public :
         int y1,y2,y3;
 
