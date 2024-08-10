@@ -1,0 +1,40 @@
+SOAL NO. 1
+Untuk multilevel inheritance, buatlah modifikasi dengan ketentuan sebagai berikut 
+(argumen fungsi dihilangkan sehingga nilainya diinputkan lewat keyboard) :
+|-----------------------------------------|
+|     a. public test -> private test      |
+|-----------------------------------------|
+|        #include <iostream.h>            |
+|        #include <conio.h>               |
+|                                         |
+|        class student                    |
+|           {                             |
+|          protected :                    |
+|            int roll_number;             |
+|          public :                       |
+|            int student;                 |
+|            void get_number();           |
+|                 void put_number();      |
+|           };                            |
+|        class test : public student      |
+|           {                             |
+|          protected :                    |
+|            float sub1;                  |
+|            float sub2;                  |
+|          public :                       |
+|            void get_marks();            |
+|            void put_marks();            |
+|           };                            |
+|        class result:private test        |
+|           {                             |
+|          float total;                   |
+|        public :                         |
+|          void display();                |
+|           };                            |
+|                                         |
+|        main()                           |
+|        { result student1;               |
+|          . . . . .                      |
+|          getch();                       |
+|           }                             |
+|-----------------------------------------|
