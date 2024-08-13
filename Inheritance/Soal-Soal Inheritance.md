@@ -39,6 +39,6 @@ Untuk multilevel inheritance, buatlah modifikasi dengan ketentuan sebagai beriku
 |           }                             |
 |-----------------------------------------|
 
-
+**SOAL NO. 2**
 Untuk  multilevel inheritance, buatlah modifikasi dengan ketentuan sebagai berikut 
 (argumen fungsi dihilangkan sehingga nilainya diinputkan lewat keyboard) :
