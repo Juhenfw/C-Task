@@ -1,4 +1,4 @@
-**SOAL NO. 1** 
+**SOAL NO. 1**
 <br> 
 Untuk multilevel inheritance, buatlah modifikasi dengan ketentuan sebagai berikut 
 (argumen fungsi dihilangkan sehingga nilainya diinputkan lewat keyboard) : 
