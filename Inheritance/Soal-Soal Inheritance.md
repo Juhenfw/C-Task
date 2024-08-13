@@ -241,7 +241,61 @@ Untuk  multiple inheritance, buatlah modifikasi dengan ketentuan sebagai berikut
     </tr>
 </table>
 
-**SOAL NO. 4**
+**SOAL NO. 5**
 <br> 
 Untuk  multiple inheritance, buatlah modifikasi dengan ketentuan sebagai berikut 
 (argumen fungsi dihilangkan sehingga nilainya diinputkan lewat keyboard) :
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <td>c. class P:public M, public N &rarr; class P:private M, private N</td>
+    </tr>
+    <tr>
+        <td>#include &lt;iostream.h&gt;</td>
+    </tr>
+    <tr>
+        <td>#include &lt;conio.h&gt;</td>
+    </tr>
+    <tr>
+        <td>
+            class M<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;protected:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int m;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;public:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void get_m();<br>
+            };
+        </td>
+    </tr>
+    <tr>
+        <td>
+            class N<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;protected:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int n;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;public:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void get_n(int);<br>
+            };
+        </td>
+    </tr>
+    <tr>
+        <td>
+            class P : private M, private N<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;public:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void display();<br>
+            };
+        </td>
+    </tr>
+    <tr>
+        <td>
+            main()<br>
+            {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;P p;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;. . . . .<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;getch();<br>
+            }
+        </td>
+    </tr>
+</table>
+
