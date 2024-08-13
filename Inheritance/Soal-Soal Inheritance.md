@@ -299,237 +299,196 @@ Untuk  multiple inheritance, buatlah modifikasi dengan ketentuan sebagai berikut
     </tr>
 </table>
 
+<br>
+
 **SOAL NO. 6**
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Diagram and Data Table</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .diagram {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .diagram table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            text-align: left;
-        }
-        .diagram td, .diagram th {
-            border: 1px solid black;
-            padding: 8px;
-        }
-        .table-container {
-            margin-top: 20px;
-        }
-        .table-container table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .table-container th, .table-container td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        .table-container th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
+<br>
+Buatlah program berdasarkan class diagram dibawah ini!
 
-    <h1>Buatlah program berdasarkan class diagram dibawah ini!</h1>
+<h2>Class Diagram</h2>
 
-    <div class="diagram">
-        <table>
-            <tr>
-                <td colspan="3">
-                    <b>FASHION</b><br>
-                    <hr>
-                    # Tahun : int<br>
-                    # Jumlah : int<br>
-                    # Harga : Float<br>
-                    <hr>
-                    + SetTahun(int)<br>
-                    + GetTahun : int<br>
-                    + SetJumlah(int)<br>
-                    + GetJumlah : int<br>
-                    + SetHarga(int)<br>
-                    + GetHarga : int<br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b>SEPATU</b><br>
-                    <hr>
-                    # Merk : String<br>
-                    # Ukuran : Float<br>
-                    <hr>
-                    + SetMerk(String)<br>
-                    + GetMerk : String<br>
-                    + SetUkuran(Float)<br>
-                    + GetUkuran : Float<br>
-                </td>
-                <td>
-                    <b>PAKAIAN</b><br>
-                    <hr>
-                    # Gender(L/P) : String<br>
-                    # Model : String<br>
-                    # Warna : String<br>
-                    <hr>
-                    + SetGen(L/P)(String)<br>
-                    + GetGen(L/P) : String<br>
-                    + SetModel(String)<br>
-                    + GetModel : String<br>
-                    + SetWarna(String)<br>
-                    + GetWarna : String<br>
-                </td>
-                <td>
-                    <b>AKSESORIS</b><br>
-                    <hr>
-                    # Jenis : String<br>
-                    # Bahan : String<br>
-                    <hr>
-                    + SetJenis(String)<br>
-                    + GetJenis : String<br>
-                    + SetBahan(Float)<br>
-                    + GetBahan : Float<br>
-                </td>
-            </tr>
-        </table>
+<div style="display: flex; justify-content: center;">
+    <div style="border: 1px solid black; padding: 10px; margin: 10px; width: 200px;">
+        <b>FASHION</b><br>
+        <hr>
+        <p># Tahun : int<br>
+        # Jumlah : int<br>
+        # Harga : Float</p>
+        <hr>
+        <p>+ SetTahun(int)<br>
+        + GetTahun : int<br>
+        + SetJumlah(int)<br>
+        + GetJumlah : int<br>
+        + SetHarga(int)<br>
+        + GetHarga : int</p>
     </div>
+</div>
 
-    <div class="table-container">
-        <h2>Selanjutnya inputkan data berdasarkan tabel berikut:</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>No.</th>
-                    <th>Tahun</th>
-                    <th>Jumlah</th>
-                    <th>Harga</th>
-                    <th>Gen (L/P)</th>
-                    <th>Model</th>
-                    <th>Warna</th>
-                    <th>Merk</th>
-                    <th>Jenis</th>
-                    <th>Bahan</th>
-                    <th>Ukuran</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>2020</td>
-                    <td>123</td>
-                    <td>IDR 120.000</td>
-                    <td>L</td>
-                    <td>Jaket</td>
-                    <td>Hitam</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>2021</td>
-                    <td>330</td>
-                    <td>IDR 320.000</td>
-                    <td>P</td>
-                    <td>Dress</td>
-                    <td>Merah</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>2022</td>
-                    <td>10</td>
-                    <td>IDR 1.400.000</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Nike</td>
-                    <td></td>
-                    <td></td>
-                    <td>38</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>2020</td>
-                    <td>24</td>
-                    <td>IDR 120.000</td>
-                    <td>L</td>
-                    <td>Kemaja</td>
-                    <td>Biru</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>2021</td>
-                    <td>33</td>
-                    <td>IDR 120.000</td>
-                    <td></td>
-                    <td>Kaos</td>
-                    <td>Putih</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>2022</td>
-                    <td>56</td>
-                    <td>IDR 120.000</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Sabuk</td>
-                    <td>Kain</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>2019</td>
-                    <td>34</td>
-                    <td>IDR 80.000</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Topi</td>
-                    <td>Kulit</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>2017</td>
-                    <td>8</td>
-                    <td>IDR 3.000.000</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Adidas</td>
-                    <td></td>
-                    <td></td>
-                    <td>42</td>
-                </tr>
-            </tbody>
-        </table>
+<div style="display: flex; justify-content: center;">
+    <div style="border: 1px solid black; padding: 10px; margin: 10px; width: 200px;">
+        <b>SEPATU</b><br>
+        <hr>
+        <p># Merk : String<br>
+        # Ukuran : Float</p>
+        <hr>
+        <p>+ SetMerk(String)<br>
+        + GetMerk : String<br>
+        + SetUkuran(Float)<br>
+        + GetUkuran : Float</p>
     </div>
+    <div style="border: 1px solid black; padding: 10px; margin: 10px; width: 200px;">
+        <b>PAKAIAN</b><br>
+        <hr>
+        <p># Gender(L/P) : String<br>
+        # Model : String<br>
+        # Warna : String</p>
+        <hr>
+        <p>+ SetGen(L/P)(String)<br>
+        + GetGen(L/P) : String<br>
+        + SetModel(String)<br>
+        + GetModel : String<br>
+        + SetWarna(String)<br>
+        + GetWarna : String</p>
+    </div>
+    <div style="border: 1px solid black; padding: 10px; margin: 10px; width: 200px;">
+        <b>AKSESORIS</b><br>
+        <hr>
+        <p># Jenis : String<br>
+        # Bahan : String</p>
+        <hr>
+        <p>+ SetJenis(String)<br>
+        + GetJenis : String<br>
+        + SetBahan(Float)<br>
+        + GetBahan : Float</p>
+    </div>
+</div>
 
-</body>
-</html>
+<h2>Selanjutnya inputkan data berdasarkan tabel berikut:</h2>
+
+<table style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black; padding: 8px;">No.</th>
+            <th style="border: 1px solid black; padding: 8px;">Tahun</th>
+            <th style="border: 1px solid black; padding: 8px;">Jumlah</th>
+            <th style="border: 1px solid black; padding: 8px;">Harga</th>
+            <th style="border: 1px solid black; padding: 8px;">Gen (L/P)</th>
+            <th style="border: 1px solid black; padding: 8px;">Model</th>
+            <th style="border: 1px solid black; padding: 8px;">Warna</th>
+            <th style="border: 1px solid black; padding: 8px;">Merk</th>
+            <th style="border: 1px solid black; padding: 8px;">Jenis</th>
+            <th style="border: 1px solid black; padding: 8px;">Bahan</th>
+            <th style="border: 1px solid black; padding: 8px;">Ukuran</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">1</td>
+            <td style="border: 1px solid black; padding: 8px;">2020</td>
+            <td style="border: 1px solid black; padding: 8px;">123</td>
+            <td style="border: 1px solid black; padding: 8px;">IDR 120.000</td>
+            <td style="border: 1px solid black; padding: 8px;">L</td>
+            <td style="border: 1px solid black; padding: 8px;">Jaket</td>
+            <td style="border: 1px solid black; padding: 8px;">Hitam</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">2</td>
+            <td style="border: 1px solid black; padding: 8px;">2021</td>
+            <td style="border: 1px solid black; padding: 8px;">330</td>
+            <td style="border: 1px solid black; padding: 8px;">IDR 320.000</td>
+            <td style="border: 1px solid black; padding: 8px;">P</td>
+            <td style="border: 1px solid black; padding: 8px;">Dress</td>
+            <td style="border: 1px solid black; padding: 8px;">Merah</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">3</td>
+            <td style="border: 1px solid black; padding: 8px;">2022</td>
+            <td style="border: 1px solid black; padding: 8px;">10</td>
+            <td style="border: 1px solid black; padding: 8px;">IDR 1.400.000</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;">Nike</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;">38</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">4</td>
+            <td style="border: 1px solid black; padding: 8px;">2020</td>
+            <td style="border: 1px solid black; padding: 8px;">24</td>
+            <td style="border: 1px solid black; padding: 8px;">IDR 120.000</td>
+            <td style="border: 1px solid black; padding: 8px;">L</td>
+            <td style="border: 1px solid black; padding: 8px;">Kemaja</td>
+            <td style="border: 1px solid black; padding: 8px;">Biru</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">5</td>
+            <td style="border: 1px solid black; padding: 8px;">2021</td>
+            <td style="border: 1px solid black; padding: 8px;">33</td>
+            <td style="border: 1px solid black; padding: 8px;">IDR 120.000</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;">Kaos</td>
+            <td style="border: 1px solid black; padding: 8px;">Putih</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">6</td>
+            <td style="border: 1px solid black; padding: 8px;">2022</td>
+            <td style="border: 1px solid black; padding: 8px;">56</td>
+            <td style="border: 1px solid black; padding: 8px;">IDR 120.000</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;">Sabuk</td>
+            <td style="border: 1px solid black; padding: 8px;">Kain</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">7</td>
+            <td style="border: 1px solid black; padding: 8px;">2019</td>
+            <td style="border: 1px solid black; padding: 8px;">34</td>
+            <td style="border: 1px solid black; padding: 8px;">IDR 80.000</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;">Topi</td>
+            <td style="border: 1px solid black; padding: 8px;">Kulit</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 8px;">8</td>
+            <td style="border: 1px solid black; padding: 8px;">2017</td>
+            <td style="border: 1px solid black; padding: 8px;">8</td>
+            <td style="border: 1px solid black; padding: 8px;">IDR 3.000.000</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;">Adidas</td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;"></td>
+            <td style="border: 1px solid black; padding: 8px;">42</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
 
