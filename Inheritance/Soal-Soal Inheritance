@@ -1,4 +1,4 @@
-SOAL NO. 1
+**SOAL NO. 1**
 Untuk multilevel inheritance, buatlah modifikasi dengan ketentuan sebagai berikut 
 (argumen fungsi dihilangkan sehingga nilainya diinputkan lewat keyboard) :
 |-----------------------------------------|
@@ -38,3 +38,7 @@ Untuk multilevel inheritance, buatlah modifikasi dengan ketentuan sebagai beriku
 |          getch();                       |
 |           }                             |
 |-----------------------------------------|
+
+
+Untuk  multilevel inheritance, buatlah modifikasi dengan ketentuan sebagai berikut 
+(argumen fungsi dihilangkan sehingga nilainya diinputkan lewat keyboard) :
