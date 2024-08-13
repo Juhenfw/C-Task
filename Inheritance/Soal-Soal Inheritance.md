@@ -1,6 +1,10 @@
-**SOAL NO. 1**
+**SOAL NO. 1** 
+<tr> 
 Untuk multilevel inheritance, buatlah modifikasi dengan ketentuan sebagai berikut 
-(argumen fungsi dihilangkan sehingga nilainya diinputkan lewat keyboard) :
+(argumen fungsi dihilangkan sehingga nilainya diinputkan lewat keyboard) : 
+<tr>
+<tr>
+    
 <table border="1" cellpadding="10" cellspacing="0">
     <tr>
         <td>a. public test -> private test</td>
