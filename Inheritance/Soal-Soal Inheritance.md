@@ -300,22 +300,236 @@ Untuk  multiple inheritance, buatlah modifikasi dengan ketentuan sebagai berikut
 </table>
 
 **SOAL NO. 6**
-<br> 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Diagram and Data Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .diagram {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .diagram table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .diagram td, .diagram th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-container th, .table-container td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .table-container th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Buatlah program berdasarkan class diagram dibawah ini!</h1>
-    <img src="C:/Users/JuhenFW/Pictures/Screenshots/Screenshot (208).png" alt="Class Diagram">
 
-    <h2>Selanjutnya inputkan data berdasarkan tabel berikut:</h2>
-    <img src="C:/Users/JuhenFW/Pictures/Screenshots/Screenshot (208).png" alt="Data Table">
+    <div class="diagram">
+        <table>
+            <tr>
+                <td colspan="3">
+                    <b>FASHION</b><br>
+                    <hr>
+                    # Tahun : int<br>
+                    # Jumlah : int<br>
+                    # Harga : Float<br>
+                    <hr>
+                    + SetTahun(int)<br>
+                    + GetTahun : int<br>
+                    + SetJumlah(int)<br>
+                    + GetJumlah : int<br>
+                    + SetHarga(int)<br>
+                    + GetHarga : int<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>SEPATU</b><br>
+                    <hr>
+                    # Merk : String<br>
+                    # Ukuran : Float<br>
+                    <hr>
+                    + SetMerk(String)<br>
+                    + GetMerk : String<br>
+                    + SetUkuran(Float)<br>
+                    + GetUkuran : Float<br>
+                </td>
+                <td>
+                    <b>PAKAIAN</b><br>
+                    <hr>
+                    # Gender(L/P) : String<br>
+                    # Model : String<br>
+                    # Warna : String<br>
+                    <hr>
+                    + SetGen(L/P)(String)<br>
+                    + GetGen(L/P) : String<br>
+                    + SetModel(String)<br>
+                    + GetModel : String<br>
+                    + SetWarna(String)<br>
+                    + GetWarna : String<br>
+                </td>
+                <td>
+                    <b>AKSESORIS</b><br>
+                    <hr>
+                    # Jenis : String<br>
+                    # Bahan : String<br>
+                    <hr>
+                    + SetJenis(String)<br>
+                    + GetJenis : String<br>
+                    + SetBahan(Float)<br>
+                    + GetBahan : Float<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table-container">
+        <h2>Selanjutnya inputkan data berdasarkan tabel berikut:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Tahun</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                    <th>Gen (L/P)</th>
+                    <th>Model</th>
+                    <th>Warna</th>
+                    <th>Merk</th>
+                    <th>Jenis</th>
+                    <th>Bahan</th>
+                    <th>Ukuran</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2020</td>
+                    <td>123</td>
+                    <td>IDR 120.000</td>
+                    <td>L</td>
+                    <td>Jaket</td>
+                    <td>Hitam</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2021</td>
+                    <td>330</td>
+                    <td>IDR 320.000</td>
+                    <td>P</td>
+                    <td>Dress</td>
+                    <td>Merah</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2022</td>
+                    <td>10</td>
+                    <td>IDR 1.400.000</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Nike</td>
+                    <td></td>
+                    <td></td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2020</td>
+                    <td>24</td>
+                    <td>IDR 120.000</td>
+                    <td>L</td>
+                    <td>Kemaja</td>
+                    <td>Biru</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2021</td>
+                    <td>33</td>
+                    <td>IDR 120.000</td>
+                    <td></td>
+                    <td>Kaos</td>
+                    <td>Putih</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2022</td>
+                    <td>56</td>
+                    <td>IDR 120.000</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Sabuk</td>
+                    <td>Kain</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2019</td>
+                    <td>34</td>
+                    <td>IDR 80.000</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Topi</td>
+                    <td>Kulit</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>2017</td>
+                    <td>8</td>
+                    <td>IDR 3.000.000</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Adidas</td>
+                    <td></td>
+                    <td></td>
+                    <td>42</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
+
