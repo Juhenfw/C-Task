@@ -299,3 +299,23 @@ Untuk  multiple inheritance, buatlah modifikasi dengan ketentuan sebagai berikut
     </tr>
 </table>
 
+**SOAL NO. 6**
+<br> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Diagram and Data Table</title>
+</head>
+<body>
+
+    <h1>Buatlah program berdasarkan class diagram dibawah ini!</h1>
+    <img src="C:/Users/JuhenFW/Pictures/Screenshots/Screenshot (208).png" alt="Class Diagram">
+
+    <h2>Selanjutnya inputkan data berdasarkan tabel berikut:</h2>
+    <img src="C:/Users/JuhenFW/Pictures/Screenshots/Screenshot (208).png" alt="Data Table">
+
+</body>
+</html>
